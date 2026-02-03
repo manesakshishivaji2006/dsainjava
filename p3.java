@@ -1,22 +1,17 @@
-class Pattern4 {
+
+
+import java.util.Scanner;
+
+class p3 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        int rows = 4;
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
 
-        for (int i = rows; i >= 1; i--) {
-
-            // Print spaces
-            for (int space = 1; space <= rows - i; space++) {
-                System.out.print(" ");
-            }
-
-            // Print stars
-            for (int star = 1; star <= i; star++) {
-                System.out.print("*");
-            }
-
-            // Move to next line
-            System.out.println();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " x " + i + " = " + (n * i));
         }
     }
 }
+
