@@ -1,22 +1,13 @@
-class Pattern6 {
+public class P5 {
     public static void main(String[] args) {
+        int[] arr = {10, 50, 20, 40};
 
-        int rows = 4;
-
-        for (int i = rows; i >= 1; i--) {
-
-            // Print spaces
-            for (int space = 1; space <= rows - i; space++) {
-                System.out.print(" ");
-            }
-
-            // Print stars
-            for (int star = 1; star <= 2 * i - 1; star++) {
-                System.out.print("*");
-            }
-
-            // New line
-            System.out.println();
+        int min = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] < min)
+                min = arr[i];
         }
+
+        System.out.println("Min = " + min);
     }
 }

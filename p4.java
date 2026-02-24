@@ -1,19 +1,13 @@
-class Pattern5 {
+public class P4 {
     public static void main(String[] args) {
+        int[] arr = {10, 50, 20, 40};
 
-        int rows = 4;
+        int max = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] > max)
+                max = arr[i];
+        }
 
-        for (int i = 1; i <= rows; i++) {
-
-            // Print spaces
-            for (int space = 1; space <= rows - i; space++) {
-                System.out.print(" ");
-            }
-
-            // Print stars
-            for (int star = 1; star <= 2 * i - 1; star++) {
-                System.out.print("*");
-            }
-
-            // New line
-            S
+        System.out.println("Max = " + max);
+    }
+}
